@@ -1,0 +1,29 @@
+* {
+  overflow-x: hidden;
+}
+.education-container {
+  width: auto;
+  height: 100vh;
+
+  overflow-y: hidden;
+
+  /* border-bottom: 2px solid black; */
+}
+/*
+.txt-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  right: 470px;
+  margin-top: -570px;
+  width: 800px;
+  height: 570px;
+}
+
+.davis-img {
+  position: relative;
+  left: 500px;
+  width: 1000px;
+  height: 570px;
+} */

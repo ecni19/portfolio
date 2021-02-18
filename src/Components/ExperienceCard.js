@@ -1,37 +1,47 @@
-import React from 'react';
-import Grid from "@material-ui/core/Grid";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
+import Accordion from "@material-ui/core/Accordion";
+import AccordionSummary from "@material-ui/core/AccordionSummary";
+import AccordionDetails from "@material-ui/core/AccordionDetails";
+import Typography from "@material-ui/core/Typography";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+
+// fix weird spacing between lines of words
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    width: "800px",
   },
-  paper: {
-    padding: theme.spacing(4),
-    height: '26vh',
-    border:'2px solid black'
+  acc: {
+    boxShadow: "2px 4px 7px rgba(0, 0, 0, 0.15)",
   },
 }));
 
 function ExperienceCard(props) {
   const classes = useStyles();
-  const responsibilities = props.respon.map(item => <li>{"- " + item}</li>)
-  return(
-    // <Grid container direction="column" alignItems="center">
-      <Grid item xs={7}>
-        <Paper className={classes.paper}>
+  const responsibilities = props.respon.map((item) => <li>{"- " + item}</li>);
+  return (
+    <div className={classes.root}>
+      <Accordion className={classes.acc}>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <h1>{props.company}</h1>
-          <h2>{props.role}</h2>
-          <h2>{props.dates}</h2>
-          <br/>
-          <ul style={{ fontSize: "16pt" }}>
+        </AccordionSummary>
+        <AccordionDetails>
+          <h3>{props.dates}</h3>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>{props.role}</Typography>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>
+            <h3>Responsibilities</h3>
             {responsibilities}
-          </ul>
-        </Paper>
-      </Grid>
-    // </Grid>
-  )
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+    </div>
+  );
 }
 
 export default ExperienceCard;

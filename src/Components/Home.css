@@ -1,6 +1,12 @@
 .home-container {
-  text-align: center;
+  /* text-align: center; */
   width: 100%;
   height: 100vh;
+  font-size: 20pt;
   /* border-bottom: 2px solid black; */
+}
+
+.home-container h1 {
+  margin: 0;
+  padding: 0;
 }

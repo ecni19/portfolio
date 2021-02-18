@@ -13,6 +13,19 @@ const useStyles = makeStyles((theme) => ({
   },
   acc: {
     boxShadow: "2px 4px 7px rgba(0, 0, 0, 0.15)",
+  }, 
+  dt: {
+    marginLeft: "5px",
+    marginTop: "-30px",
+    paddingTop: "8px"
+  },
+  accDetails: {
+    marginLeft: "5px",
+    marginTop: "-35px",
+  },
+  tech: {
+    marginTop: "-15px",
+    marginLeft: "15px"
   }
 }));
 
@@ -25,16 +38,18 @@ function ProjectCard(props) {
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <h1>{props.projectName}</h1>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails className={classes.dt}>
           <h3>{props.date}</h3>
         </AccordionDetails>
-        <AccordionDetails>
+        <AccordionDetails className={classes.accDetails}>
           <Typography>{props.details}</Typography>
         </AccordionDetails>
-        <AccordionDetails>
+        <AccordionDetails className={classes.accDetails}>
           <Typography>
-            <h3>Technology Used</h3>
-            {techList}
+            <h3>Technology Used:</h3>
+            <div className={classes.tech}>
+              {techList}
+            </div>
           </Typography>
         </AccordionDetails>
       </Accordion>

@@ -16,27 +16,41 @@ const useStyles = makeStyles((theme) => ({
   acc: {
     boxShadow: "2px 4px 7px rgba(0, 0, 0, 0.15)",
   },
+  accDetails: {
+    marginLeft: "5px",
+    marginTop: "-35px",
+  },
+  dt: {
+    marginLeft: "5px",
+    marginTop: "-30px",
+  },
+  resp: {
+    marginTop: "-15px",
+    marginLeft: "15px"
+  }
 }));
 
 function ExperienceCard(props) {
   const classes = useStyles();
-  const responsibilities = props.respon.map((item) => <li>{"- " + item}</li>);
+  const responsibilities = props.respon.map((item) => <li>{item}</li>);
   return (
     <div className={classes.root}>
       <Accordion className={classes.acc}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <h1>{props.company}</h1>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails className={classes.dt}>
           <h3>{props.dates}</h3>
         </AccordionDetails>
-        <AccordionDetails>
-          <Typography>{props.role}</Typography>
+        <AccordionDetails className={classes.accDetails}>
+          <h3>{props.role}</h3>
         </AccordionDetails>
-        <AccordionDetails>
+        <AccordionDetails className={classes.accDetails}>
           <Typography>
-            <h3>Responsibilities</h3>
-            {responsibilities}
+            <h3>Responsibilities:</h3>
+            <div className={classes.resp}>
+              {responsibilities}
+            </div>
           </Typography>
         </AccordionDetails>
       </Accordion>

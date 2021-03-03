@@ -23,6 +23,7 @@ const portfolio = ["React.js", "CSS", "Material-UI"];
 const zoomInsights = ["React.js", "Google Firebase"];
 const sankofa = ["React.js", "CSS"];
 const anc = ["HTML", "CSS"]
+const lern = ["React.js", "CSS", "Node.js", "Google Firebase", "CockroachDB"];
 function Projects() {
   const classes = useStyles();
 
@@ -83,6 +84,16 @@ function Projects() {
                   "Developed the Community Members page for the Autism and Neurodiversity Community at UC Davis as a part of #include Davis' fall quarter project"
                 }
                 tech={anc}
+              />
+            </Grid>
+            <Grid item>
+              <ProjectCard
+                projectName={"Lern"}
+                date={"February 2021"}
+                details={
+                  "Developed an open source learning webapp that allows individuals to post their school notes. Created during SDHacks"
+                }
+                tech={lern}
               />
             </Grid>
           </Grid>

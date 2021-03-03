@@ -34,7 +34,7 @@ function ProjectCard(props) {
   const techList = props.tech.map((item) => <li>{item}</li>); // render the array of technologies passed in
   return (
     <div className={classes.root}>
-      <Accordion className={classes.acc}>
+      <Accordion style={{borderRadius:"20px"}} className={classes.acc}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <h1>{props.projectName}</h1>
         </AccordionSummary>

@@ -35,7 +35,7 @@ function ExperienceCard(props) {
   const responsibilities = props.respon.map((item) => <li>{item}</li>);
   return (
     <div className={classes.root}>
-      <Accordion className={classes.acc}>
+      <Accordion style={{borderRadius:"20px"}} className={classes.acc}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <h1>{props.company}</h1>
         </AccordionSummary>

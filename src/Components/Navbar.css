@@ -20,12 +20,63 @@ ul#horizontal-list li {
 
 a {
   text-decoration: none;
-  font-size: 14pt;
+  font-size: 26pt;
   color:black;
   font-weight: 600;
   user-select: none;
+  transition: text-decoration, 0.5s;
 }
 a:hover {
+  font-size: 28pt;
   text-decoration: underline;
   cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  ul#horizontal-list {
+    list-style: none;
+  }
+
+  ul#horizontal-list li {
+    display: inline;
+    margin: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 20pt;
+    color:black;
+    font-weight: 600;
+    user-select: none;
+    transition: text-decoration, 0.5s;
+  }
+  a:hover {
+    font-size: 22pt;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  ul#horizontal-list {
+    list-style: none;
+  }
+
+  ul#horizontal-list li {
+    display: inline;
+    margin: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 14pt;
+    color:black;
+    font-weight: 600;
+    user-select: none;
+    transition: text-decoration, 0.5s;
+  }
+  a:hover {
+    font-size: 17pt;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }

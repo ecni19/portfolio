@@ -7,15 +7,17 @@ import About from './Components/About';
 import './App.css';
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-      <Home/>
-      <h1 className="sections">Projects</h1>
-      <Projects/>
-      <h1 className="sections">Experience</h1>
-      <Experience/>
-      <h1 className="sections">About</h1>
-      <About/>
+    <div>
+      <Navbar />
+      <Home />
+      <div className="App">
+        <h1 className="sections">Projects</h1>
+        <Projects />
+        <h1 className="sections">Experience</h1>
+        <Experience />
+        <h1 className="sections">About</h1>
+        <About />
+      </div>
     </div>
   );
 }

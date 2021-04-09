@@ -7,7 +7,6 @@ function handleClick(px, e) { // figure out bug where page goes to top when clic
 }
 
 function Navbar() {
-  
   return (
     <div>
       <div className="container">

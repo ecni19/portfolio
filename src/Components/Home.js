@@ -4,8 +4,8 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div>
-      <Grid container className="home-container" direction="column" justify="center" alignItems="center">
+    <div className="home-container">
+      <Grid container direction="column" justify="center" alignItems="center">
         <Grid item>
           <h1>Hi my name is Eric.</h1>
           <br></br>

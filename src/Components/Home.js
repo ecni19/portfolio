@@ -1,19 +1,11 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
-import "./Home.css";
+import styles from "./Home.module.css";
 
-function Home() {
+export default function Home() {
   return (
-    <div className="home-container">
-      <Grid container direction="column" justify="center" alignItems="center">
-        <Grid item>
-          <h1>Hi my name is Eric.</h1>
-          <br></br>
-          <h1>I'm a student and aspiring software engineer</h1>
-        </Grid>
-      </Grid>
+    <div className={styles.container}>
+      <h1>Hello, my name is Eric.</h1>
+      <h2>I'm an aspiring software engineer and student</h2>
     </div>
   );
 }
-
-export default Home;

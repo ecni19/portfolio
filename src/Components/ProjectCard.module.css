@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 80vw;
+  min-height: 250px;
+  border-radius: 20px;
+  border: solid black 1px;
+  box-shadow: 5px 5px 15px #d7d7d7;
+  padding: 15px;
+  transition: transform .2s;
+}
+.container:hover {
+  transform: scale(1.03);
+}
+.techList {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 250px;
+  min-height: 80px;
+  bottom: 10px;
+  left: 20px;
+  padding: 0;
+  margin: 0;
+}
+.techItems {
+  display: block;
+  min-width: 55px;
+  text-align: center;
+  border:solid black 1px;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 0 4px 0 0;
+}
+.title {
+  font-size: 18pt;
+  margin: 0;
+  padding: 10px;
+}
+
+.desc {
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
+.date {
+  composes: desc;
+}
+
+.longDesc {
+  margin: 0;
+  padding: 10px 0 0 10px;
+}

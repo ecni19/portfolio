@@ -1,38 +1,21 @@
 import React from "react";
-import Accordion from "@material-ui/core/Accordion";
-import AccordionSummary from "@material-ui/core/AccordionSummary";
-import AccordionDetails from "@material-ui/core/AccordionDetails";
-import Typography from "@material-ui/core/Typography";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import "./ProjectCard.css";
+import styles from "./ProjectCard.module.css";
 
-function ProjectCard(props) {
-  const techList = props.tech.map((item) => <li>{item}</li>); // render the array of technologies passed in
-  return (
-    <div className="root">
-      <Accordion style={{borderRadius:"20px", border:'solid #ebebeb 1px'}} className="acc">
-        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <h1>{props.projectName}</h1>
-        </AccordionSummary>
-        <AccordionDetails className="dt">
-          <h3>{props.date}</h3>
-        </AccordionDetails>
-        <AccordionDetails className="accDetails">
-          <h3 className="techUsed">{props.details}</h3>
-        </AccordionDetails>
-        <AccordionDetails className="accDetails">
-          <Typography>
-            <h3 className="techUsed">Technology Used:</h3>
-            <div className="tech">
-              <ul>
-                {techList}
-              </ul>
-            </div>
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+export default function Projectcard(props) {
+  const arr = [];
+  const renderTechStack = () => {
+    props.techArr.forEach(e => {
+      arr.push(<li className={styles.techItems}>{e}</li>);
+    });
+    return arr;
+  }
+  return(
+    <div className={styles.container}>
+      <h1 className={styles.title}>{props.name}</h1>
+      <h4 className={styles.desc}>{props.shortDesc}</h4>
+      <h4 className={styles.date}>{props.date}</h4>
+      <h4 className={styles.longDesc}>{props.longDesc}</h4>
+      <ul className={styles.techList}>{renderTechStack()}</ul>
     </div>
-  );
+  )
 }
-
-export default ProjectCard;

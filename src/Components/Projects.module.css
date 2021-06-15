@@ -20,7 +20,7 @@
 
 @media screen and (width:375px) and (height:667px) {
   .container {
-    height: 250vh;
+    height: 300vh;
   }
 }
 @media screen and (width:414px) and (height:736px) {

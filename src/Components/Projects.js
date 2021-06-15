@@ -13,13 +13,19 @@ const projects = [
     name: "ZoomInsights",
     date: "January 2021",
     longDesc: "A webapp that helps instructors evaluate student engagement and confusion by processing Zoom meeting chatlogs",
-    techArr: ["React.js", "CSS", "NodeJS", "Firebase"]
+    techArr: ["React.js", "CSS", "Node.js", "Firebase"]
   },
   {
     name: "Sankofa Recorded Sessions Page",
     date: "February 2021",
     longDesc: "I developed the recorded sessions page for Sankofa as a part of #include Davis' winter quarter project",
     techArr: ["React.js", "CSS"]
+  },
+  {
+    name: "Lurn",
+    date: "February 2021",
+    longDesc:"SDHacks project that allows users to upload their notes to an open source learning resource",
+    techArr:["React.js", "Firebase", "Node.js", "Express"]
   },
   {
     name: "Portfolio",

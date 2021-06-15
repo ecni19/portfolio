@@ -1,9 +1,8 @@
-import {React} from 'react';
+import React from 'react';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Projects from "./Components/Projects";
-
-import styles from './App.module.css';
+import Contact from './Components/Contact';
 
 function App() {
   return (
@@ -11,6 +10,7 @@ function App() {
       <Navbar/>
       <Home/>
       <Projects/>
+      <Contact/>
     </div>
   );
 }

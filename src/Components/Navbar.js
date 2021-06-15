@@ -8,7 +8,7 @@ function handleClick(px, e) { // figure out bug where page goes to top when clic
   scroll.scrollTo(px);
 }
 
-function Navbar() {
+function Navbar({open, setOpen}) {
   const [width, setWidth] = useState(window.innerWidth);
 
   function handleWindowSizeChange() {
@@ -24,12 +24,11 @@ function Navbar() {
 
   return (
     <div className={styles.container}>
-      {width < 1024 ? <Hamburger/> :
+      {width < 1024 ? <Hamburger open={open} setOpen={setOpen}/> :
         <ul className={styles.horizontalList}>
           <li className={styles.listItems}><Link activeClass="active" onClick={(e) => handleClick(0, e)}>Home</Link></li>
           <li className={styles.listItems}><Link activeClass="active" onClick={(e) => handleClick(window.innerHeight*1, e)}>Projects</Link></li>
-          <li className={styles.listItems}><Link activeClass="active" onClick={(e) => handleClick(window.innerHeight*2, e)}>Experience</Link></li>
-          <li className={styles.listItems}><Link activeClass="active" onClick={(e) => handleClick(window.innerHeight*3, e)}>About</Link></li>
+          <li className={styles.listItems}><Link activeClass="active" onClick={(e) => handleClick(window.innerHeight*2, e)}>About</Link></li>
         </ul> 
       }
     </div>

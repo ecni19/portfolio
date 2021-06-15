@@ -48,10 +48,10 @@
 }
 @media screen and (width:375px) and (height:667px) {
   .aboutCard {
-    height: 80vh;
+    height: 70vh;
   }
   .container {
-    height: 100vh;
+    height: 80vh;
   }
 }
 

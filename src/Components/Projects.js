@@ -37,9 +37,10 @@ export default function Projects() {
     })
     return arr;
   }
-  return(
-    <div className={styles.container}>
-      {renderProjects()}
+  return (
+    <div>
+      <h2 className={styles.title}>PROJECTS</h2>
+      <div className={styles.container}>{renderProjects()}</div>
     </div>
-  )
+  );
 }

@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  max-width: 100%;
+  width: 100vw;
+  height: 10vh;
+  /* border: solid black 1px; */
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+  .icon {
+    height: 40px;
+    width: 65px;
+  }
+}

@@ -16,6 +16,17 @@
   padding: 10px;
   line-height: 30px;
 }
+
+@media screen and (width:375px) and (height:667px) {
+  .container {
+    height: 215vh;
+  }
+}
+@media screen and (width:414px) and (height:736px) {
+  .container {
+    height: 200vh;
+  }
+}
 @media screen and (min-width:768px) {
   .container {
     height: 150vh;
@@ -38,6 +49,16 @@
   }
 }
 
+@media screen and (min-width:1024px) and (min-height: 720px) {
+  .container {
+    height: 130vh;
+  }
+}
+@media screen and (min-width:1024px) and (min-height: 930px) {
+  .container {
+    height: 100vh;
+  }
+}
 @media only screen 
   and (min-width: 1024px) 
   and (max-height: 1366px) 

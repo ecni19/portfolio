@@ -9,13 +9,15 @@ export default function Projectcard(props) {
     });
     return arr;
   }
-  return(
-    <div className={styles.container}>
-      <h1 className={styles.title}>{props.name}</h1>
-      <h4 className={styles.desc}>{props.shortDesc}</h4>
-      <h4 className={styles.date}>{props.date}</h4>
-      <h4 className={styles.longDesc}>{props.longDesc}</h4>
-      <ul className={styles.techList}>{renderTechStack()}</ul>
+  return (
+    <div>
+      <div className={styles.container}>
+        <h1 className={styles.title}>{props.name}</h1>
+        <h4 className={styles.desc}>{props.shortDesc}</h4>
+        <h4 className={styles.date}>{props.date}</h4>
+        <h4 className={styles.longDesc}>{props.longDesc}</h4>
+        <ul className={styles.techList}>{renderTechStack()}</ul>
+      </div>
     </div>
-  )
+  );
 }

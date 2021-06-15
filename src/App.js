@@ -2,7 +2,8 @@ import React from 'react';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Projects from "./Components/Projects";
-import Contact from './Components/Contact';
+import Footer from "./Components/Footer";
+import About from "./Components/About";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Navbar/>
       <Home/>
       <Projects/>
-      <Contact/>
+      <About/>
+      <Footer/>
     </div>
   );
 }

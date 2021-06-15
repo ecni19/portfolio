@@ -24,7 +24,7 @@ function Navbar() {
 
   return (
     <div className={styles.container}>
-      {width < 768 ? <Hamburger/> :
+      {width < 1024 ? <Hamburger/> :
         <ul className={styles.horizontalList}>
           <li className={styles.listItems}><Link activeClass="active" onClick={(e) => handleClick(0, e)}>Home</Link></li>
           <li className={styles.listItems}><Link activeClass="active" onClick={(e) => handleClick(window.innerHeight*1, e)}>Projects</Link></li>

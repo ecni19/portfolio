@@ -6,6 +6,7 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  box-shadow: 0 4px 6px -2px rgba(0,0,0,.2);
   z-index: 22;
   li {
     padding: 15px 25px;
@@ -20,7 +21,7 @@ const Ul = styled.ul`
     text-decoration: underline;
     text-decoration-color: #37392E;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     margin-top: 50px;
     flex-flow: column nowrap;
     background-color: #fff;

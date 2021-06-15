@@ -10,10 +10,10 @@ const projects = [
     techArr: ["Python", "UiPath"]
   },
   {
-    name: "Portfolio",
-    date: "June 2021",
-    longDesc: "This website was created to showcase my projects and experiences.",
-    techArr: ["React.js", "CSS"]
+    name: "ZoomInsights",
+    date: "January 2021",
+    longDesc: "A webapp that helps instructors evaluate student engagement and confusion by processing Zoom meeting chatlogs",
+    techArr: ["React.js", "CSS", "NodeJS", "Firebase"]
   },
   {
     name: "Sankofa Recorded Sessions Page",
@@ -22,10 +22,10 @@ const projects = [
     techArr: ["React.js", "CSS"]
   },
   {
-    name: "ZoomInsights",
-    date: "January 2021",
-    longDesc: "A webapp that helps instructors evaluate student engagement and confusion by processing Zoom meeting chatlogs",
-    techArr: ["React.js", "CSS", "NodeJS", "Firebase"]
+    name: "Portfolio",
+    date: "June 2021",
+    longDesc: "This website was created to showcase my projects and experiences.",
+    techArr: ["React.js", "CSS"]
   }
 ]
 

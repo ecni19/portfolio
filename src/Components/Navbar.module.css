@@ -20,7 +20,8 @@
   a {
     text-decoration: none;
     color:black;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 14pt;
     user-select: none;
   }
   a:hover {

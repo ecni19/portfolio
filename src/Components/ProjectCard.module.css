@@ -36,6 +36,7 @@
   margin: 0 4px 0 0;
 }
 .title {
+  letter-spacing: 0.5px;
   font-size: 18pt;
   margin: 0;
   padding: 10px;
@@ -47,10 +48,14 @@
 }
 
 .date {
+  font-weight: 300;
+  font-size: 14pt;
+  letter-spacing: 1px;
   composes: desc;
 }
 
 .longDesc {
+  font-weight: 300;
   margin: 0;
   padding: 10px 0 0 10px;
 }
@@ -68,6 +73,9 @@
     height: 230px;
     margin: 0px 25px 25px 25px;
     padding: 7px;
+  }
+  .longDesc {
+    font-size: 14pt;
   }
 }
 

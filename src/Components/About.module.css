@@ -12,7 +12,7 @@
   display: flex;
   width: 100vw;
   max-width: 100%;
-  height: 70vh;
+  height: 80vh;
   justify-content: center;
 }
 
@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   width: 80vw;
-  height: 60vh;
+  max-height: 70vh;
   padding: 15px;
   align-items: center;
   border-radius: 20px;
@@ -28,39 +28,26 @@
 }
 
 .square {
-  display: inline-block;
   width: 200px;
   height: 200px;
+  position: relative;
   overflow: hidden;
   border-radius: 50%;
   box-shadow: 5px 5px 15px #d7d7d7;
 }
 
 .pic {
-  width: auto;
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
   height: 100%;
-  margin-left: -50px;
+  width: auto;
 }
 
 .textField {
   width: 70vw;
 }
-
-@media only screen and (min-device-width:375px) and (max-device-height:667px) and (-webkit-min-device-pixel-ratio: 2) {
-  .aboutCard {
-    height: 75vh;
-  }
-  .pic {
-    margin-left: -47px;
-  }
-  .container {
-    height: 85vh;
-  }
-  .title {
-    margin-top: 30px;
-  }
-}
-@media only screen and (min-device-width:375px) and (max-device-width:812px) and (-webkit-min-device-pixel-ratio: 3) {
+@media screen and (min-width: 375px) and (min-height: 812px) {
   .aboutCard {
     height: 60vh;
   }
@@ -69,15 +56,12 @@
   }
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-width: 414px) and (min-height: 736px) {
   .aboutCard {
-    height: 55vh;
-  }
-  .container {
     height: 65vh;
   }
-  .pic {
-    margin-left: -40px;
+  .container {
+    height: 75vh;
   }
 }
 

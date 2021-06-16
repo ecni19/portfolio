@@ -4,11 +4,12 @@
   position: relative;
   border: solid #E8EDEF 1px;
   width: 80vw;
-  min-height: 250px;
+  height: 250px;
   border-radius: 20px;
   box-shadow: 5px 5px 15px #d7d7d7;
   padding: 15px;
   transition: transform .2s;
+  margin-bottom: 20px;
 }
 .container:hover {
   transform: scale(1.03);

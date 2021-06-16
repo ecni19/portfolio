@@ -46,7 +46,7 @@
   width: 70vw;
 }
 
-@media screen and (min-width:375px) and (max-width:667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-width:375px) and (min-height:667px) and (-webkit-min-device-pixel-ratio: 2) {
   .aboutCard {
     height: 75vh;
   }
@@ -68,7 +68,8 @@
     height: 70vh;
   }
 }
-@media screen and (min-width:414px) and (min-height:736px) {
+
+@media screen and (min-width:414px) and (min-height:736px) and (-webkit-min-device-pixel-ratio: 3) {
   .container {
     height: 75vh;
   }
@@ -79,17 +80,37 @@
     margin-left: -50px;
   }
 }
+@media only screen and (min-width: 414px) and (min-height: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+  .aboutCard {
+    height: 50vh;
+  }
+  .container {
+    height: 60vh;
+  }
+}
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (min-height: 896px) {
+  .aboutCard {
+    height: 43vh;
+  }
+  .container {
+    height: 53vh;
+  }
+  .textfield {
+    font-size: 18pt;
+  }
+}
+
+@media screen and (min-width:768px) and (min-height: 1024px) {
   .title {
     max-width: 82vw;
     margin: auto;
   }
   .container {
-    height: 80vh;
+    height: 70vh;
   }
   .aboutCard {
-    height: 70vh;
+    height: 60vh;
   }
   .square {
     width: 270px;
@@ -107,6 +128,9 @@
   .title {
     max-width: 79vw;
   }
+  .container {
+    height: 70vh;
+  }
   .aboutCard {
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -115,6 +139,7 @@
   }
   .textField {
     width: 60%;
+    font-size: 18pt;
   }
   .square {
     width: 400px;

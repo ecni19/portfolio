@@ -66,7 +66,11 @@
   .container {
     margin-bottom: 20px;
   }
+  .longDesc {
+    font-size: 18pt;
+  }
 }
+
 @media screen and (min-width:1024px) {
   .container {
     width: 35vw;
@@ -86,5 +90,8 @@
   and (-webkit-min-device-pixel-ratio: 1.5) {
     .container {
       width: 80vw;
+    }
+    .longDesc {
+      font-size: 18pt;
     }
 }

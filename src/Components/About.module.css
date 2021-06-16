@@ -64,7 +64,14 @@
     height: 75vh;
   }
 }
-
+@media screen and (min-width: 414px) and (min-height: 896px) {
+  .aboutCard {
+    height: 53vh;
+  }
+  .container {
+    height: 63vh;
+  }
+}
 @media screen and (min-width:768px) and (min-height: 896px) {
   .aboutCard {
     height: 43vh;
@@ -100,9 +107,10 @@
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1024px) and (min-height: 896px) {
   .title {
-    max-width: 79vw;
+    max-width: 73vw;
+    margin-top: 0px;
   }
   .container {
     height: 70vh;
@@ -111,15 +119,15 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     height: 60vh;
-    padding: 5px;
+    width: 73vw;
   }
   .textField {
     width: 60%;
-    font-size: 18pt;
+    font-size: 17pt;
   }
   .square {
-    width: 400px;
-    height: 400px;
+    width: 360px;
+    height: 360px;
   }
   .pic {
     margin-left: -110px;

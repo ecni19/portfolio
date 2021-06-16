@@ -5,7 +5,7 @@ import pfp from "./images/pfp.jpeg";
 export default function About() {
   return (
     <div>
-      <h2 className={styles.title}>ABOUT ME22</h2>
+      <h2 className={styles.title}>ABOUT ME</h2>
       <div className={styles.container}>
         <div className={styles.aboutCard}>
           <div className={styles.square}>

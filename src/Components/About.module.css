@@ -46,21 +46,21 @@
   width: 70vw;
 }
 
-@media screen and (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width:375px) and (max-device-height:667px) and (-webkit-min-device-pixel-ratio: 2) {
   .aboutCard {
-    height: 80vh;
+    height: 75vh;
   }
   .pic {
     margin-left: -47px;
   }
   .container {
-    height: 90vh;
+    height: 85vh;
   }
   .title {
     margin-top: 30px;
   }
 }
-@media screen and (min-device-width:375px) and (max-device-width:812px) {
+@media only screen and (min-device-width:375px) and (max-device-width:812px) and (-webkit-min-device-pixel-ratio: 3) {
   .aboutCard {
     height: 60vh;
   }
@@ -69,23 +69,15 @@
   }
 }
 
-@media screen and (min-width:414px) and (min-height:736px) and (-webkit-min-device-pixel-ratio: 3) {
-  .container {
-    height: 75vh;
-  }
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
   .aboutCard {
+    height: 55vh;
+  }
+  .container {
     height: 65vh;
   }
   .pic {
-    margin-left: -50px;
-  }
-}
-@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
-  .aboutCard {
-    height: 50vh;
-  }
-  .container {
-    height: 60vh;
+    margin-left: -40px;
   }
 }
 

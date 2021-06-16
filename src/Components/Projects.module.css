@@ -17,25 +17,25 @@
   line-height: 30px;
 }
 
-@media screen and (min-width:375px) and (max-width:667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio: 2) {
   .container {
     height: 225vh;
   }
 }
 
-@media screen and (min-width:375px) and (min-height:812px) {
+@media screen and (min-device-width:375px) and (max-device-width:812px) and (-webkit-min-device-pixel-ratio: 3) {
   .container {
     height: 180vh;
   }
 }
 
-@media screen and (min-width:414px) and (min-height:736px) and (-webkit-min-device-pixel-ratio: 3) {
+@media screen and (min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio: 3) {
   .container {
     height: 200vh;
   }
 }
 
-@media only screen and (min-width: 414px) and (min-height: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
   .container {
     height: 165vh;
   }

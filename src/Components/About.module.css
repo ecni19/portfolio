@@ -46,7 +46,7 @@
   width: 70vw;
 }
 
-@media screen and (min-width:375px) and (max-width:667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio: 2) {
   .aboutCard {
     height: 75vh;
   }
@@ -60,7 +60,7 @@
     margin-top: 30px;
   }
 }
-@media screen and (min-width:375px) and (min-height:812px) {
+@media screen and (min-device-width:375px) and (max-device-width:812px) {
   .aboutCard {
     height: 60vh;
   }
@@ -80,7 +80,7 @@
     margin-left: -50px;
   }
 }
-@media only screen and (min-width: 414px) and (min-height: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
   .aboutCard {
     height: 50vh;
   }

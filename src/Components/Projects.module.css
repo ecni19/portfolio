@@ -6,7 +6,6 @@
   height: 180vh;
   align-items: center;
   justify-content: space-between;
-  border: solid black 1px;
 }
 .title {
   max-width: 85vw;

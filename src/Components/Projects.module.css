@@ -19,7 +19,7 @@
 
 @media screen and (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio: 2) {
   .container {
-    height: 225vh;
+    height: 235vh;
   }
 }
 

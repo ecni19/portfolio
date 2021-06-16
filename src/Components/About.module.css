@@ -49,13 +49,13 @@
 
 @media screen and (min-width:375px) and (max-width:667px) and (-webkit-min-device-pixel-ratio: 2) {
   .aboutCard {
-    height: 70vh;
+    height: 75vh;
   }
   .pic {
     margin-left: -47px;
   }
   .container {
-    height: 80vh;
+    height: 85vh;
   }
   .title {
     margin-top: 30px;

@@ -22,3 +22,24 @@
   padding: 0;
   font-weight: 500;
 }
+
+@media screen and (min-width: 768px) {
+  .header1 {
+    font-size: 36pt;
+  }
+  .header2 {
+    font-size: 30pt;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    height: 95vh;
+  }
+  .header1 {
+    font-size: 38pt;
+  }
+  .header2 {
+    font-size: 34pt;
+  }
+}

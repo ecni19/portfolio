@@ -29,7 +29,7 @@
 }
 .techItems {
   display: block;
-  min-width: 70px;
+  width: 70px;
   text-align: center;
   border:solid black 1px;
   border-radius: 20px;
@@ -75,6 +75,12 @@
   }
   .longDesc {
     font-size: 18pt;
+  }
+  .title {
+    font-size: 20pt;
+  }
+  .date {
+    font-size: 16pt;
   }
 }
 

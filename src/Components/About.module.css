@@ -12,7 +12,7 @@
   display: flex;
   width: 100vw;
   max-width: 100%;
-  height: 85vh;
+  height: 575px;
   justify-content: center;
 }
 
@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   width: 80vw;
-  max-height: 75vh;
+  height: 475px;
   padding: 15px;
   align-items: center;
   border-radius: 20px;
@@ -47,92 +47,29 @@
 .textField {
   width: 70vw;
 }
-@media screen and (min-width: 375px) and (min-height: 812px) {
-  .aboutCard {
-    height: 60vh;
-  }
-  .container {
-    height: 70vh;
-  }
-}
 
-@media screen and (min-width: 414px) and (min-height: 736px) {
-  .aboutCard {
-    height: 65vh;
+@media screen and (min-width: 768px) {
+  .textField {
+    font-size: 16pt;
   }
-  .container {
-    height: 75vh;
-  }
-}
-@media screen and (min-width: 414px) and (min-height: 896px) {
-  .aboutCard {
-    height: 53vh;
-  }
-  .container {
-    height: 63vh;
-  }
-}
-@media screen and (min-width:768px) and (min-height: 896px) {
-  .aboutCard {
-    height: 43vh;
-  }
-  .container {
-    height: 53vh;
-  }
-  .textfield {
-    font-size: 18pt;
-  }
-}
-
-@media screen and (min-width:768px) and (min-height: 1024px) {
   .title {
-    max-width: 82vw;
-    margin: auto;
+    width: 80vw;
   }
-  .container {
-    height: 70vh;
-  }
-  .aboutCard {
-    height: 60vh;
-  }
-  .square {
-    width: 270px;
-    height: 270px;
-  }
-  .pic {
-    margin-left: -70px;
-  }
+}
+
+
+@media screen and (min-width: 1024px) {
   .textField {
     font-size: 18pt;
+    width: 60%;
   }
-}
-
-@media screen and (min-width:1024px) and (min-height: 896px) {
-  .title {
-    max-width: 73vw;
-    margin-top: 0px;
-  }
-  .container {
-    height: 70vh;
+  .square {
+    width: 400px;
+    height: 400px;
   }
   .aboutCard {
     flex-direction: row-reverse;
     justify-content: space-around;
-    height: 60vh;
-    width: 73vw;
-  }
-  .textField {
-    width: 60%;
-    font-size: 17pt;
-  }
-  .square {
-    width: 360px;
-    height: 360px;
-  }
-  .pic {
-    margin-left: -110px;
+    height: 500px;
   }
 }
-
-
-

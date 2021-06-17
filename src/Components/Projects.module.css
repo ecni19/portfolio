@@ -7,7 +7,7 @@
   justify-content: space-between;
 }
 .title {
-  max-width: 85vw;
+  width: 85vw;
   font-size: 20pt;
   letter-spacing: 1px;
   text-align: left;
@@ -16,54 +16,23 @@
   line-height: 30px;
 }
 
-@media screen and (min-width:768px) and (max-height: 896px) {
-  .container {
-    height: 165vh;
-  }
-}
-
-@media screen and (min-width:768px) and (min-height: 1024px) {
-  .container {
-    height: 150vh;
-    justify-content: flex-start;
-  }
+@media screen and (min-width:768px) {
   .title {
-    max-width: 82vw;
+    max-width: 80vw;
   }
 }
 
 @media screen and (min-width:1024px) {
   .container {
-    height: 125vh;
+    min-height:500px; 
     flex-wrap: wrap;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
   .title {
-    max-width: 73vw;
+    width: 73vw;
   }
 }
 
-@media screen and (min-width:1024px) and (min-height: 896px) {
-  .container {
-    height: 100vh;
-  }
-}
-@media screen and (min-width:1024px) and (min-height: 930px) {
-  .container {
-    height: 100vh;
-  }
-}
-
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-    .container {
-      height: 110vh;
-    }
-    .title {
-      max-width: 80vw;
-    }
-}

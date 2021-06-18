@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, animateScroll as scroll} from 'react-scroll';
 import Hamburger from './Hamburger';
 import styles from './Navbar.module.css';
@@ -10,6 +10,7 @@ function handleClick(px, e) { // figure out bug where page goes to top when clic
 
 function Navbar({open, setOpen}) {
   const [width, setWidth] = useState(window.innerWidth);
+
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
